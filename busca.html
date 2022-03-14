@@ -39,17 +39,28 @@
             z-index: 0;
         }
 
-
-        .main_input {
-            border: 1px solid #e0e0e0;
-            margin-right: 10px;
-            border-radius: 8px;
-        }
-
         .cancel_btn {
             border-radius: 25px;
             border: 1px solid #F44336;
             padding: 5px 15px;
+            margin: 15px 8px 0 0;
+        }
+
+        .busca_main {
+            padding: 0 20px !important;
+        }
+
+        .close_btn {
+            margin-left: 10px;
+            font-size: 11px !important;
+        }
+        .card_icon img {
+            width: 13px;
+            margin-right: 6px;
+        }
+
+        .card_icon p {
+            margin-bottom: 9px !important;
         }
     </style>
 </head>
@@ -86,59 +97,53 @@
     <!-- ----------------------------section-----------------------------  -->
     <div class="container-fluid grey lighten-4">
         <div style="margin-bottom: 0;" class="row">
-            <div class="col m3 white black-text">
+            <div class="col m3 white black-text busca_main">
+                <p>Tipo</p>
                 <div>
-                    <p>Tipo</p>
-                    <div>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in " checked="checked" />
-                                <span>Próprio</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in" />
-                                <span>Franquia</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in" />
-                                <span>Licenciamento</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in" />
-                                <span>Representação</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in" />
-                                <span>Venda direta</span>
-                            </label>
-                        </p>
-                    </div>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="filled-in " checked="checked" />
+                            <span>Próprio</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span>Franquia</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span>Licenciamento</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span>Representação</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span>Venda direta</span>
+                        </label>
+                    </p>
                 </div>
                 <hr />
 
-                <div>
-                    <p>Situação</p>
-                    <div style="display: flex; justify-content: space-around;">
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in " checked="checked" />
-                                <span>Próprio</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in" />
-                                <span>Franquia</span>
-                            </label>
-                        </p>
+                <div style="padding: 15px 0;">
+                    <p style="margin-top: 0;">Situação</p>
+                    <div style="display: flex;">
+                        <label style="margin-right: 15px;">
+                            <input type="checkbox" class="filled-in " checked="checked" />
+                            <span>Próprio</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span>Franquia</span>
+                        </label>
                     </div>
                 </div>
                 <hr />
@@ -481,38 +486,31 @@
                             <option value="3">Option 3</option>
                         </select>
                     </div>
-
                 </div>
                 <hr />
 
-                <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-                    <div style="margin-top: 20px;" class="cancel_btn">
-                        <a class="red-text">Alimentação <i style="margin-left: 13px; font-size: 13px;"
-                                class="tiny material-icons">close</i></a>
+                <div style="display: flex; flex-wrap: wrap; margin-bottom: 25px;">
+                    <div class="cancel_btn">
+                        <a class="red-text">Alimentação <i class="tiny material-icons close_btn">close</i></a>
                     </div>
-                    <div style="margin-top: 20px;" class="cancel_btn">
-                        <a class="red-text">Restaurante <i style="margin-left: 13px; font-size: 13px;"
-                                class="tiny material-icons">close</i></a>
+                    <div class="cancel_btn">
+                        <a class="red-text">Restaurante <i class="tiny material-icons close_btn">close</i></a>
                     </div>
-                    <div style="margin-top: 20px;" class="cancel_btn">
-                        <a class="red-text">Próprio <i style="margin-left: 13px; font-size: 13px;"
-                                class="tiny material-icons">close</i></a>
+                    <div class="cancel_btn">
+                        <a class="red-text">Próprio <i class="tiny material-icons close_btn">close</i></a>
                     </div>
-                    <div style="margin-top: 20px;" class="cancel_btn">
-                        <a class="red-text">Novo <i style="margin-left: 13px; font-size: 13px;"
-                                class="tiny material-icons">close</i></a>
+                    <div class="cancel_btn">
+                        <a class="red-text">Novo <i class="tiny material-icons close_btn">close</i></a>
                     </div>
-                    <div style="margin-top: 20px;" class="cancel_btn">
-                        <a class="red-text">Até 12 meses <i style="margin-left: 13px; font-size: 13px;"
-                                class="tiny material-icons">close</i></a>
+                    <div class="cancel_btn">
+                        <a class="red-text">Até 12 meses <i class="tiny material-icons close_btn">close</i></a>
                     </div>
-                    <div style="margin-top: 20px;" class="cancel_btn">
-                        <a class="red-text">Abaixo do ponto de equilíbrio <i style="margin-left: 13px; font-size: 13px;"
-                                class="tiny material-icons">close</i></a>
+                    <div class="cancel_btn">
+                        <a class="red-text">Abaixo do ponto de equilíbrio <i
+                                class="tiny material-icons close_btn">close</i></a>
                     </div>
-                    <div style="margin-top: 20px;" class="cancel_btn">
-                        <a class="red-text">Diária <i style="margin-left: 13px; font-size: 13px;"
-                                class="tiny material-icons">close</i></a>
+                    <div class="cancel_btn">
+                        <a class="red-text">Diária <i class="tiny material-icons close_btn">close</i></a>
                     </div>
                 </div>
                 <hr />
@@ -526,20 +524,24 @@
                                         <div class="card-image">
                                             <img src="images/beep-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -548,20 +550,24 @@
                                         <div class="card-image">
                                             <img src="images/clothes-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -570,20 +576,24 @@
                                         <div class="card-image">
                                             <img src="images/champ-busa.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -592,20 +602,24 @@
                                         <div class="card-image">
                                             <img src="images/bottle-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -614,20 +628,24 @@
                                         <div class="card-image">
                                             <img src="images/sale-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -636,20 +654,24 @@
                                         <div class="card-image">
                                             <img src="images/brew-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -658,20 +680,24 @@
                                         <div class="card-image">
                                             <img src="images/bottle-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -680,20 +706,24 @@
                                         <div class="card-image">
                                             <img src="images/cafe-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -702,20 +732,24 @@
                                         <div class="card-image">
                                             <img src="images/candid-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -724,20 +758,24 @@
                                         <div class="card-image">
                                             <img src="images/sale-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -746,20 +784,24 @@
                                         <div class="card-image">
                                             <img src="images/bag-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -768,20 +810,24 @@
                                         <div class="card-image">
                                             <img src="images/clothes-busm.png">
                                         </div>
-                                        <div class="card-content">
-                                            <p style="font-weight: 500;" class="black-text">Franquia Lojas Beep</p>
-                                            <div style="padding: 10px;" class="grey-text">
-                                                <p>Lucratividade: 25%</p>
-                                                <p>Existente desde 2018</p>
-                                                <p>Faturamento Mensal: R$75.000,00</p>
-                                                <p>Payback (Retorno): 2 anos</p>
-                                                <p>Modelo de negócio: Franquia</p>
+                                        <div style="padding: 10px;" class="card-content">
+                                            <h6 style="font-weight: 700; margin-bottom: 25px;" class="black-text">
+                                                Franquia
+                                                Lojas Beep</h6>
+                                            <div class="grey-text card_icon">
+                                                <p><img src="./images/percent-line.png" /> Lucratividade: 25%</p>
+                                                <p><img src="./images/calender.png" /> Existente desde 2018</p>
+                                                <p><img src="./images/money-dollar-circle-line.png" />Faturamento
+                                                    Mensal:
+                                                    R$75.000,00</p>
+                                                <p><img src="./images/refresh-line.png" />Payback (Retorno): 2 anos</p>
+                                                <p><img src="./images/building.png" />Modelo de negócio: Franquia</p>
                                             </div>
                                             <h5>R$ 300.000</h5>
-
                                         </div>
                                         <div class="card-action grey-text">
-                                            <p style="margin: 0">São Paulo - SP </p>
+                                            <p style="margin: 0"><img src="./images/map-pin-line.png" /> São Paulo - SP
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -869,7 +915,12 @@
         </div>
     </footer>
 
-
+    <script>
+        
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
 
 </html>

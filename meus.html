@@ -29,6 +29,23 @@
         body {
             font-family: 'Montserrat', sans-serif;
         }
+
+        .side_icon img {
+            width: 18px;
+            margin-right: 5px;
+        }
+
+        .card_img {
+            min-height: 165px;
+        }
+
+        @media (max-width: 768px) {
+            .card_img {
+                min-height: 165px;
+                min-width: 330px;
+                object-fit: cover;
+            }
+        }
     </style>
 </head>
 
@@ -42,12 +59,17 @@
                     class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <div style='display: flex; justify-content: center; align-items: center;'>
-                    <p style="margin: 0;" class="red-text">CRIE UM NOVO ANÚNCIO E VENDA SEU NEGÓCIO</p>
+                    <p style="margin: 0; font-weight: 600;" class="red-text text-darken-1">CRIE UM NOVO ANÚNCIO E VENDA
+                        SEU NEGÓCIO</p>
                     <img style="margin: 0 10px;" src="images/Ellipse 7.png" />
                 </div>
             </ul>
         </div>
     </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="_blank">CRIE UM NOVO ANÚNCIO E VENDA SEU NEGÓCIO</a> <img style="margin: 0 10px;"
+                src="images/Ellipse 7.png" /></li>
+    </ul>
 
     <!-- -----------------------Navbar end ----------------------- -->
 
@@ -55,167 +77,180 @@
     <div class="container-fluid">
         <div style="margin: 0;" class="row">
             <div class="col m2 white">
-                <ul>
+                <ul class="side_icon">
                     <li style="margin: 15px">
                         <div style="display: flex; align-items: center;">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            <img src="./images/search-line.png" alt="serach" />
                             Buscar
                         </div>
                     </li>
 
                     <li style="margin: 15px">
                         <div style="display: flex; align-items: center;">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            <img src="./images/money-dollar-circle-line.png" alt="dollar" />
                             Vender meu negócio
                         </div>
                     </li>
 
                     <li style="margin: 15px">
-                        <div style="display: flex; align-items: center;" class="red-text">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                        <a href="meus.html" style="display: flex; align-items: center;" class="red-text">
+                            <img src="./images/store-3-line.png" alt="building" />
                             Meus anúncios
-                        </div>
+                        </a>
                     </li>
 
                     <li style="margin: 15px">
                         <div style="display: flex; align-items: center;">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            <img src="./images/hammer-line2.png" alt="hammer" />
                             Propostas
                         </div>
                     </li>
 
                     <li style="margin: 15px">
-                        <div style="display: flex; align-items: center;">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                        <a href="favoritos.html" class="black-text" style="display: flex; align-items: center;">
+                            <img src="./images/heart-line.png" alt="heart" />
                             Favoritos
-                        </div>
+                        </a>
                     </li>
 
                     <li style="margin: 15px">
                         <div style="display: flex; align-items: center;">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            <img src="./images/user-line.png" alt="user" />
                             Minha Conta
                         </div>
                     </li>
 
                     <li style="margin: 15px">
                         <div style="display: flex; align-items: center;">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            <img src="./images/question-line.png" alt="question-line" />
                             Ajuda
                         </div>
                     </li>
 
                     <li style="margin: 15px">
                         <div style="display: flex; align-items: center;">
-                            <i style="margin-right: 5px; font-size: 20px;" class=" tiny material-icons">search</i>
+                            <img src="./images/logout-box-line.png" alt="logout-box-line" />
                             Sair
                         </div>
                     </li>
-
                 </ul>
-
-
             </div>
             <div style="padding: 15px;" class="col m10 grey lighten-4">
-                <h5>Meus Anúncios</h5>
+                <h5 class="black-text text-darken-1">Meus Anúncios</h5>
                 <hr />
 
                 <div class="row">
                     <div class="col s12">
                         <ul class="tabs grey lighten-4">
-                            <li class="tab col s3"><a class="active" href="#test1">Ativos(1)</a></li>
-                            <li class="tab col s3"><a href="#test2">Inativos</a></li>
+                            <li class="tab col s3"><a style="font-weight: 700;" class="active red-text"
+                                    href="#test1">Ativos (1)</a>
+                            </li>
+                            <li class="tab col s3"><a style="font-weight: 700;" class="active red-text"
+                                    href="#test2">Inativos</a></li>
                         </ul>
                         <hr />
                     </div>
                     <div style="margin-top: 30px;" id="test1" class="col s12">
                         <div class="container">
-                            <div style="border-radius: 5px;" class="row white">
-                                <div style="overflow: hidden; padding: 0;" class="col m3">
-                                    <img src="images/clothes-busm.png" />
+                            <div style="border-radius: 5px; margin-bottom: 40px;" class="row white">
+                                <div style="overflow: hidden; padding: 0; height: 165px;" class="col m3">
+                                    <img class="card_img" src="images/meus1.png" />
                                 </div>
                                 <div class="col m9">
                                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                                        <p>Franquia Lojas Beep</p>
-                                        <i style="font-size: 20px;" class=" tiny material-icons">create</i>
+                                        <h5 style="font-weight: 700;">Franquia Lojas Beep</h5>
+                                        <i style="font-size: 20px; cursor: pointer;"
+                                            class=" tiny material-icons">create</i>
                                     </div>
-                                    <p>R$ 300.000</p>
-                                    <hr />
+                                    <h5>R$ 300.000</h5>
+                                    <hr style="margin: 18px 0;" />
                                     <div style="display: flex;">
                                         <p style="display: flex; margin: 0 10px"> <i
                                                 style="font-size: 20px; margin-right: 5px;"
                                                 class=" tiny material-icons">date_range</i> Criado em: 29/10/2021</p>
-                                        <p style="margin: 0;"><strong style="font-weight: 700">Status:</strong> Online
+                                        <p style="margin: 0;">
+                                            <strong style="font-weight: 700"><img src="./images/check-fill.png" />
+                                                Status:</strong>
+                                            Online
                                         </p>
                                     </div>
                                 </div>
-
                             </div>
 
-                            <div style="border-radius: 5px;" class="row white">
-                                <div style="overflow: hidden; padding: 0;" class="col m3">
-                                    <img src="images/clothes-busm.png" />
+                            <div style="border-radius: 5px; margin-bottom: 40px;" class="row white">
+                                <div style="overflow: hidden; padding: 0; max-height: 165px;" class="col m3">
+                                    <img class="card_img" src="images/meus2.png" />
                                 </div>
                                 <div class="col m9">
                                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                                        <p>Franquia Lojas Beep</p>
-                                        <i style="font-size: 20px;" class=" tiny material-icons">create</i>
+                                        <h5 style="font-weight: 700;">Franquia Lojas Beep</h5>
+                                        <i style="font-size: 20px; cursor: pointer;"
+                                            class=" tiny material-icons">create</i>
                                     </div>
-                                    <p>R$ 300.000</p>
-                                    <hr />
+                                    <h5>R$ 300.000</h5>
+                                    <hr style="margin: 18px 0;" />
                                     <div style="display: flex;">
                                         <p style="display: flex; margin: 0 10px"> <i
                                                 style="font-size: 20px; margin-right: 5px;"
                                                 class=" tiny material-icons">date_range</i> Criado em: 29/10/2021</p>
-                                        <p style="margin: 0;"><strong style="font-weight: 700">Status:</strong> Online
+                                        <p style="margin: 0;">
+                                            <strong style="font-weight: 700"><img src="./images/check-fill.png" />
+                                                Status:</strong>
+                                            Online
                                         </p>
                                     </div>
                                 </div>
-
                             </div>
 
-                            <div style="border-radius: 5px;" class="row white">
-                                <div style="overflow: hidden; padding: 0;" class="col m3">
-                                    <img src="images/clothes-busm.png" />
+                            <div style="border-radius: 5px; margin-bottom: 40px;" class="row white">
+                                <div style="overflow: hidden; padding: 0; max-height: 165px;" class="col m3">
+                                    <img class="card_img" src="images/meus3.png" />
                                 </div>
                                 <div class="col m9">
                                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                                        <p>Franquia Lojas Beep</p>
-                                        <i style="font-size: 20px;" class=" tiny material-icons">create</i>
+                                        <h5 style="font-weight: 700;">Franquia Lojas Beep</h5>
+                                        <i style="font-size: 20px; cursor: pointer;"
+                                            class=" tiny material-icons">create</i>
                                     </div>
-                                    <p>R$ 300.000</p>
-                                    <hr />
+                                    <h5>R$ 300.000</h5>
+                                    <hr style="margin: 18px 0;" />
                                     <div style="display: flex;">
                                         <p style="display: flex; margin: 0 10px"> <i
                                                 style="font-size: 20px; margin-right: 5px;"
                                                 class=" tiny material-icons">date_range</i> Criado em: 29/10/2021</p>
-                                        <p style="margin: 0;"><strong style="font-weight: 700">Status:</strong> Online
+                                        <p style="margin: 0;">
+                                            <strong style="font-weight: 700"><img src="./images/check-fill.png" />
+                                                Status:</strong>
+                                            Online
                                         </p>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
                     </div>
                     <div style="margin-top: 30px;" id="test2" class="col s12">
                         <div class="container">
-                            <div style="border-radius: 5px;" class="row white">
-                                <div style="overflow: hidden; padding: 0;" class="col m3">
-                                    <img src="images/clothes-busm.png" />
+                            <div style="border-radius: 5px; margin-bottom: 40px;" class="row white">
+                                <div style="overflow: hidden; padding: 0; max-height: 165px;" class="col m3">
+                                    <img class="card_img" src="images/meus4.png" />
                                 </div>
                                 <div class="col m9">
                                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                                        <p>Franquia Lojas Beep</p>
-                                        <i style="font-size: 20px;" class=" tiny material-icons">create</i>
+                                        <h5 style="font-weight: 700;">Franquia Lojas Beep</h5>
+                                        <i style="font-size: 20px; cursor: pointer;"
+                                            class=" tiny material-icons">create</i>
                                     </div>
-                                    <p>R$ 300.000</p>
-                                    <hr />
+                                    <h5>R$ 300.000</h5>
+                                    <hr style="margin: 18px 0;" />
                                     <div style="display: flex;">
                                         <p style="display: flex; margin: 0 10px"> <i
                                                 style="font-size: 20px; margin-right: 5px;"
                                                 class=" tiny material-icons">date_range</i> Criado em: 29/10/2021</p>
-                                        <p style="margin: 0;"><strong style="font-weight: 700">Status:</strong> Online
+                                        <p style="margin: 0;">
+                                            <strong style="font-weight: 700"><img src="./images/check-fill.png" />
+                                                Status:</strong>
+                                            Online
                                         </p>
                                     </div>
                                 </div>
@@ -227,6 +262,7 @@
         </div>
 
         <!-- ----------------------section-------------------------- -->
+
         <!-- ------------------------footer ------------------------------------------  -->
         <footer class="page-footer black white-text">
             <div class="container-fluid">
@@ -301,6 +337,10 @@
         </footer>
 
         <script>
+            $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+
             $(document).ready(function () {
                 $('.tabs').tabs();
             });

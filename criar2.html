@@ -60,12 +60,17 @@
                     class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <div style='display: flex; justify-content: center; align-items: center;'>
-                    <p style="margin: 0;" class="red-text">CRIE UM NOVO ANÚNCIO E VENDA SEU NEGÓCIO</p>
+                    <p style="margin: 0; font-weight: 600;" class="red-text text-darken-1">CRIE UM NOVO ANÚNCIO E VENDA
+                        SEU NEGÓCIO</p>
                     <img style="margin: 0 10px;" src="images/Ellipse 7.png" />
                 </div>
             </ul>
         </div>
     </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="_blank">CRIE UM NOVO ANÚNCIO E VENDA SEU NEGÓCIO</a> <img style="margin: 0 10px;"
+                src="images/Ellipse 7.png" /></li>
+    </ul>
 
     <!-- -----------------------Navbar end ----------------------- -->
 
@@ -158,7 +163,7 @@
                 </div>
             </div>
 
-            <div style="margin-right: 120px;" class="right">
+            <div style="display: flex; justify-content: end;" class="col s12 m11">
                 <a style="border-radius: 5px; margin: 20px;"
                     class="waves-effect waves-light btn darken-2 white black-text">Cancelar</a>
                 <a style="border-radius: 5px; margin: 20px;"
@@ -240,5 +245,17 @@
         </div>
     </footer>
 
+    <script>
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
 </body>
+
 </html>
